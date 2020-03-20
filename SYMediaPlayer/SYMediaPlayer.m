@@ -36,9 +36,9 @@
     if (self = [super init]) {
         self.decoder = [SYPlayerDecoder decoderByDefault];
         self.contentURL = nil;
-        self.videoType = SYVideoTypeNormal;
-        self.displayMode = SYDisplayModeNormal;
-        self.viewGravityMode = SYGravityModeResizeAspect;
+        self.videoType = SYVideoTypeNormal;     //. SYVideoTypeVR;
+        self.displayMode = SYDisplayModeNormal; //. SYDisplayModeBox;
+        self.viewGravityMode = SYGravityModeResizeAspect;   //. SYGravityModeResizeAspectFill;
         self.playableBufferInterval = 2.f;
         self.viewAnimationHidden = YES;
         self.volume = 1.f;
@@ -50,7 +50,7 @@
 
 - (void)replaceVideoWithURL:(nullable NSURL *)contentURL
 {
-    [self replaceVideoWithURL:contentURL videoType:SYVideoTypeNormal];
+    [self replaceVideoWithURL:contentURL videoType:self.videoType];
 }
 
 - (void)replaceVideoWithURL:(nullable NSURL *)contentURL videoType:(SYVideoType)videoType

@@ -52,6 +52,7 @@
     //.
     self.player = [SYMediaPlayer player];
     self.player.decoder = [SYPlayerDecoder decoderByFFmpeg];
+//    self.player.decoder = [SYPlayerDecoder decoderByAVPlayer];
     [self.view insertSubview:self.player.displayView atIndex:0];
     
     //.

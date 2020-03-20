@@ -5,13 +5,16 @@ SYMediaPlayer based on FFmpeg 4.x.x, AudioUnit, OpenGL.
 
 ## Features
 
-- Support armv7, armv7s, arm64, arm64e devices.
-- Available run in iOS and iPadOS.
+- AVPlayer, FFMpegPlayer.
+- Support continuous seek play.
+- Available setting of playback speed.
 - Background playback.
-- RTMP/RTSP streaming.
-- Setting playback speed.
 - Multiple audio/video tracks.
+- VR, Video size aspect, ModalBox.
+- RTMP/RTSP streaming.
 - H.264/H.265 hardware accelerator.
+- Available run in iOS and iPadOS.
+- Support armv7, armv7s, arm64, arm64e devices.
 
 ## Build
 
