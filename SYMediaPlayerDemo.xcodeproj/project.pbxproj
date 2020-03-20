@@ -1,0 +1,1146 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1657D66F242108280038FC1C /* SYGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1657D66D242108280038FC1C /* SYGLKViewController.m */; };
+		1657D67524210CAB0038FC1C /* SYAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1657D67424210CAB0038FC1C /* SYAVPlayer.m */; };
+		1657D67824210CBD0038FC1C /* SYFFMpegPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1657D67724210CBD0038FC1C /* SYFFMpegPlayer.m */; };
+		1657D67B24210F940038FC1C /* SYPlayerTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1657D67A24210F940038FC1C /* SYPlayerTrack.m */; };
+		1657D67E242114020038FC1C /* SYPlayerDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1657D67D242114020038FC1C /* SYPlayerDecoder.m */; };
+		166F2ADE241E358100BF81CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 166F2ADD241E358100BF81CC /* AppDelegate.m */; };
+		166F2AE4241E358100BF81CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166F2AE3241E358100BF81CC /* ViewController.m */; };
+		166F2AE7241E358100BF81CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166F2AE5241E358100BF81CC /* Main.storyboard */; };
+		166F2AE9241E358200BF81CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 166F2AE8241E358200BF81CC /* Assets.xcassets */; };
+		166F2AEC241E358200BF81CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166F2AEA241E358200BF81CC /* LaunchScreen.storyboard */; };
+		166F2AEF241E358200BF81CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 166F2AEE241E358200BF81CC /* main.m */; };
+		166F2AF8241E3B4500BF81CC /* SYMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 166F2AF7241E3B4500BF81CC /* SYMediaPlayer.m */; };
+		1686272424207F9900CC9F79 /* SYPlayerAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1686272324207F9900CC9F79 /* SYPlayerAudioManager.m */; };
+		1686272724207FB000CC9F79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1686272624207FB000CC9F79 /* Foundation.framework */; };
+		1686272924207FB700CC9F79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1686272824207FB700CC9F79 /* UIKit.framework */; };
+		1686272B24207FBD00CC9F79 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1686272A24207FBD00CC9F79 /* AudioToolbox.framework */; };
+		1686272D24207FC300CC9F79 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1686272C24207FC300CC9F79 /* VideoToolbox.framework */; };
+		1686272F24207FF000CC9F79 /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1686272E24207FF000CC9F79 /* libbz2.1.0.tbd */; };
+		168627312420800100CC9F79 /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 168627302420800100CC9F79 /* libz.1.2.8.tbd */; };
+		168627332420800C00CC9F79 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 168627322420800C00CC9F79 /* libc++.1.tbd */; };
+		168627352420801700CC9F79 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 168627342420801700CC9F79 /* libiconv.2.4.0.tbd */; };
+		16862737242080DC00CC9F79 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16862736242080DC00CC9F79 /* AVFoundation.framework */; };
+		16862739242080E700CC9F79 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16862738242080E700CC9F79 /* Accelerate.framework */; };
+		168627BB2420821300CC9F79 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1686273B2420821300CC9F79 /* libavcodec.a */; };
+		168627BC2420821300CC9F79 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1686273C2420821300CC9F79 /* libavdevice.a */; };
+		168627BD2420821300CC9F79 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1686273D2420821300CC9F79 /* libavfilter.a */; };
+		168627BE2420821300CC9F79 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1686273E2420821300CC9F79 /* libavformat.a */; };
+		168627BF2420821300CC9F79 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1686273F2420821300CC9F79 /* libavutil.a */; };
+		168627C02420821300CC9F79 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 168627402420821300CC9F79 /* libswresample.a */; };
+		168627C12420821300CC9F79 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 168627412420821300CC9F79 /* libswscale.a */; };
+		168627C62420835A00CC9F79 /* SYPlayerDistortionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 168627C52420835A00CC9F79 /* SYPlayerDistortionModel.m */; };
+		168627C8242083DD00CC9F79 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168627C7242083DD00CC9F79 /* GLKit.framework */; };
+		168627CB242085A800CC9F79 /* SYPlayerDistortionRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 168627CA242085A800CC9F79 /* SYPlayerDistortionRenderer.m */; };
+		16B0CF8A2420A72000BAB62A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B0CF892420A72000BAB62A /* CoreGraphics.framework */; };
+		16B0CF8D2420A8F700BAB62A /* SYPlayerFingerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CF8C2420A8F700BAB62A /* SYPlayerFingerRotation.m */; };
+		16B0CF902420A97300BAB62A /* SYPlayerMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CF8F2420A97300BAB62A /* SYPlayerMatrix.m */; };
+		16B0CF932420ACE900BAB62A /* SYPlayerSenssor.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CF922420ACE900BAB62A /* SYPlayerSenssor.m */; };
+		16B0CF982420B04900BAB62A /* SYPlayerFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CF972420B04900BAB62A /* SYPlayerFrame.m */; };
+		16B0CF9D2420B1CA00BAB62A /* SYPlayerAudioFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CF9C2420B1CA00BAB62A /* SYPlayerAudioFrame.m */; };
+		16B0CFA02420B1E000BAB62A /* SYPlayerVideoFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CF9F2420B1E000BAB62A /* SYPlayerVideoFrame.m */; };
+		16B0CFA42420BA4900BAB62A /* SYPlayerYUVTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFA32420BA4900BAB62A /* SYPlayerYUVTool.m */; };
+		16B0CFA72420BDE500BAB62A /* SYPlayerAudioDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFA62420BDE500BAB62A /* SYPlayerAudioDecoder.m */; };
+		16B0CFAA2420BF7B00BAB62A /* SYPlayerFrameQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFA92420BF7B00BAB62A /* SYPlayerFrameQueue.m */; };
+		16B0CFAD2420BF9E00BAB62A /* SYPlayerFramePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFAC2420BF9E00BAB62A /* SYPlayerFramePool.m */; };
+		16B0CFB02420C8AB00BAB62A /* SYPlayerVideoDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFAF2420C8AB00BAB62A /* SYPlayerVideoDecoder.m */; };
+		16B0CFB32420C9B600BAB62A /* SYPlayerVideoPacketQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFB22420C9B600BAB62A /* SYPlayerVideoPacketQueue.m */; };
+		16B0CFB62420C9D300BAB62A /* SYPlayerVideoToolBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFB52420C9D300BAB62A /* SYPlayerVideoToolBox.m */; };
+		16B0CFBA2420CF6200BAB62A /* SYPlayerFFTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFB92420CF6200BAB62A /* SYPlayerFFTools.m */; };
+		16B0CFC02420D34800BAB62A /* SYPlayerRenderingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFBF2420D34800BAB62A /* SYPlayerRenderingView.m */; };
+		16B0CFC72420D3C100BAB62A /* SYPlayerGLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFC62420D3C100BAB62A /* SYPlayerGLModel.m */; };
+		16B0CFCA2420D48800BAB62A /* SYPlayerGLNormalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFC92420D48800BAB62A /* SYPlayerGLNormalModel.m */; };
+		16B0CFCD2420D53800BAB62A /* SYPlayerGLVRModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFCC2420D53800BAB62A /* SYPlayerGLVRModel.m */; };
+		16B0CFD02420D5A800BAB62A /* SYPlayerGLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFCF2420D5A800BAB62A /* SYPlayerGLTexture.m */; };
+		16B0CFD32420D5BE00BAB62A /* SYPlayerGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFD22420D5BE00BAB62A /* SYPlayerGLProgram.m */; };
+		16B0CFD62420D5DA00BAB62A /* SYPlayerGLFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFD52420D5DA00BAB62A /* SYPlayerGLFrame.m */; };
+		16B0CFD92420D8CC00BAB62A /* SYPlayerGLProgramNV12.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFD82420D8CC00BAB62A /* SYPlayerGLProgramNV12.m */; };
+		16B0CFDC2420D92100BAB62A /* SYPlayerGLProgramYUV420.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFDB2420D92100BAB62A /* SYPlayerGLProgramYUV420.m */; };
+		16B0CFDF2420D97C00BAB62A /* SYPlayerGLTextureNV12.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFDE2420D97C00BAB62A /* SYPlayerGLTextureNV12.m */; };
+		16B0CFE12420DA2A00BAB62A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B0CFE02420DA2A00BAB62A /* OpenGLES.framework */; };
+		16B0CFE42420DABF00BAB62A /* SYPlayerGLTextureYUV420.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFE32420DABF00BAB62A /* SYPlayerGLTextureYUV420.m */; };
+		16B0CFE72420DBA800BAB62A /* SYPlayerGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0CFE62420DBA800BAB62A /* SYPlayerGLViewController.m */; };
+		16B0D0052421078700BAB62A /* SYEAGLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0D0002421078700BAB62A /* SYEAGLContext.m */; };
+		16B0D0062421078700BAB62A /* SYGLKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0D0022421078700BAB62A /* SYGLKView.m */; };
+		16E26230242348C0008C5CD6 /* SYPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E2622E242348C0008C5CD6 /* SYPlayerViewController.m */; };
+		16E26231242348C0008C5CD6 /* SYPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E2622F242348C0008C5CD6 /* SYPlayerViewController.xib */; };
+		16FF060924224806000989E4 /* SYFFDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FF060824224806000989E4 /* SYFFDecoder.m */; };
+		16FF060C2422483F000989E4 /* SYPlayerFFTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FF060B2422483F000989E4 /* SYPlayerFFTrack.m */; };
+		16FF060F242248D0000989E4 /* SYPlayerFFMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FF060E242248D0000989E4 /* SYPlayerFFMetadata.m */; };
+		16FF061224224D45000989E4 /* SYPlayerFFCodecContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FF061124224D45000989E4 /* SYPlayerFFCodecContext.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1657D66D242108280038FC1C /* SYGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGLKViewController.m; sourceTree = "<group>"; };
+		1657D66E242108280038FC1C /* SYGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGLKViewController.h; sourceTree = "<group>"; };
+		1657D67324210CAB0038FC1C /* SYAVPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAVPlayer.h; sourceTree = "<group>"; };
+		1657D67424210CAB0038FC1C /* SYAVPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAVPlayer.m; sourceTree = "<group>"; };
+		1657D67624210CBD0038FC1C /* SYFFMpegPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYFFMpegPlayer.h; sourceTree = "<group>"; };
+		1657D67724210CBD0038FC1C /* SYFFMpegPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYFFMpegPlayer.m; sourceTree = "<group>"; };
+		1657D67924210F940038FC1C /* SYPlayerTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerTrack.h; sourceTree = "<group>"; };
+		1657D67A24210F940038FC1C /* SYPlayerTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerTrack.m; sourceTree = "<group>"; };
+		1657D67C242114020038FC1C /* SYPlayerDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerDecoder.h; sourceTree = "<group>"; };
+		1657D67D242114020038FC1C /* SYPlayerDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerDecoder.m; sourceTree = "<group>"; };
+		166F2AD9241E358100BF81CC /* SYMediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYMediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		166F2ADC241E358100BF81CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		166F2ADD241E358100BF81CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		166F2AE2241E358100BF81CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		166F2AE3241E358100BF81CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		166F2AE6241E358100BF81CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		166F2AE8241E358200BF81CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		166F2AEB241E358200BF81CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		166F2AED241E358200BF81CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		166F2AEE241E358200BF81CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		166F2AF6241E3B4500BF81CC /* SYMediaPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYMediaPlayer.h; sourceTree = "<group>"; };
+		166F2AF7241E3B4500BF81CC /* SYMediaPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYMediaPlayer.m; sourceTree = "<group>"; };
+		166F2AF9241E3B7100BF81CC /* ParamsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParamsDefine.h; sourceTree = "<group>"; };
+		1686272224207F9900CC9F79 /* SYPlayerAudioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerAudioManager.h; sourceTree = "<group>"; };
+		1686272324207F9900CC9F79 /* SYPlayerAudioManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerAudioManager.m; sourceTree = "<group>"; };
+		1686272624207FB000CC9F79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1686272824207FB700CC9F79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1686272A24207FBD00CC9F79 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1686272C24207FC300CC9F79 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		1686272E24207FF000CC9F79 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		168627302420800100CC9F79 /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
+		168627322420800C00CC9F79 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		168627342420801700CC9F79 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		16862736242080DC00CC9F79 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		16862738242080E700CC9F79 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		1686273B2420821300CC9F79 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
+		1686273C2420821300CC9F79 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavdevice.a; sourceTree = "<group>"; };
+		1686273D2420821300CC9F79 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavfilter.a; sourceTree = "<group>"; };
+		1686273E2420821300CC9F79 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
+		1686273F2420821300CC9F79 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
+		168627402420821300CC9F79 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
+		168627412420821300CC9F79 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		168627442420821300CC9F79 /* ac3_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ac3_parser.h; sourceTree = "<group>"; };
+		168627452420821300CC9F79 /* adts_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adts_parser.h; sourceTree = "<group>"; };
+		168627462420821300CC9F79 /* avcodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avcodec.h; sourceTree = "<group>"; };
+		168627472420821300CC9F79 /* avdct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avdct.h; sourceTree = "<group>"; };
+		168627482420821300CC9F79 /* avfft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avfft.h; sourceTree = "<group>"; };
+		168627492420821300CC9F79 /* d3d11va.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = d3d11va.h; sourceTree = "<group>"; };
+		1686274A2420821300CC9F79 /* dirac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dirac.h; sourceTree = "<group>"; };
+		1686274B2420821300CC9F79 /* dv_profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dv_profile.h; sourceTree = "<group>"; };
+		1686274C2420821300CC9F79 /* dxva2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dxva2.h; sourceTree = "<group>"; };
+		1686274D2420821300CC9F79 /* jni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jni.h; sourceTree = "<group>"; };
+		1686274E2420821300CC9F79 /* mediacodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mediacodec.h; sourceTree = "<group>"; };
+		1686274F2420821300CC9F79 /* qsv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qsv.h; sourceTree = "<group>"; };
+		168627502420821300CC9F79 /* vaapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vaapi.h; sourceTree = "<group>"; };
+		168627512420821300CC9F79 /* vdpau.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vdpau.h; sourceTree = "<group>"; };
+		168627522420821300CC9F79 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		168627532420821300CC9F79 /* videotoolbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videotoolbox.h; sourceTree = "<group>"; };
+		168627542420821300CC9F79 /* vorbis_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vorbis_parser.h; sourceTree = "<group>"; };
+		168627552420821300CC9F79 /* xvmc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xvmc.h; sourceTree = "<group>"; };
+		168627572420821300CC9F79 /* avdevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avdevice.h; sourceTree = "<group>"; };
+		168627582420821300CC9F79 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		1686275A2420821300CC9F79 /* avfilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avfilter.h; sourceTree = "<group>"; };
+		1686275B2420821300CC9F79 /* buffersink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffersink.h; sourceTree = "<group>"; };
+		1686275C2420821300CC9F79 /* buffersrc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffersrc.h; sourceTree = "<group>"; };
+		1686275D2420821300CC9F79 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		1686275F2420821300CC9F79 /* avformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avformat.h; sourceTree = "<group>"; };
+		168627602420821300CC9F79 /* avio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avio.h; sourceTree = "<group>"; };
+		168627612420821300CC9F79 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		168627632420821300CC9F79 /* adler32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adler32.h; sourceTree = "<group>"; };
+		168627642420821300CC9F79 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		168627652420821300CC9F79 /* aes_ctr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_ctr.h; sourceTree = "<group>"; };
+		168627662420821300CC9F79 /* attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attributes.h; sourceTree = "<group>"; };
+		168627672420821300CC9F79 /* audio_fifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio_fifo.h; sourceTree = "<group>"; };
+		168627682420821300CC9F79 /* avassert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avassert.h; sourceTree = "<group>"; };
+		168627692420821300CC9F79 /* avconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avconfig.h; sourceTree = "<group>"; };
+		1686276A2420821300CC9F79 /* avstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avstring.h; sourceTree = "<group>"; };
+		1686276B2420821300CC9F79 /* avutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avutil.h; sourceTree = "<group>"; };
+		1686276C2420821300CC9F79 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		1686276D2420821300CC9F79 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		1686276E2420821300CC9F79 /* bprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bprint.h; sourceTree = "<group>"; };
+		1686276F2420821300CC9F79 /* bswap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bswap.h; sourceTree = "<group>"; };
+		168627702420821300CC9F79 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		168627712420821300CC9F79 /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		168627722420821300CC9F79 /* cast5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast5.h; sourceTree = "<group>"; };
+		168627732420821300CC9F79 /* channel_layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = channel_layout.h; sourceTree = "<group>"; };
+		168627742420821300CC9F79 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		168627752420821300CC9F79 /* cpu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu.h; sourceTree = "<group>"; };
+		168627762420821300CC9F79 /* crc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc.h; sourceTree = "<group>"; };
+		168627772420821300CC9F79 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		168627782420821300CC9F79 /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict.h; sourceTree = "<group>"; };
+		168627792420821300CC9F79 /* display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = display.h; sourceTree = "<group>"; };
+		1686277A2420821300CC9F79 /* downmix_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = downmix_info.h; sourceTree = "<group>"; };
+		1686277B2420821300CC9F79 /* encryption_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encryption_info.h; sourceTree = "<group>"; };
+		1686277C2420821300CC9F79 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		1686277D2420821300CC9F79 /* eval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eval.h; sourceTree = "<group>"; };
+		1686277E2420821300CC9F79 /* ffversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffversion.h; sourceTree = "<group>"; };
+		1686277F2420821300CC9F79 /* fifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fifo.h; sourceTree = "<group>"; };
+		168627802420821300CC9F79 /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
+		168627812420821300CC9F79 /* frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frame.h; sourceTree = "<group>"; };
+		168627822420821300CC9F79 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		168627832420821300CC9F79 /* hdr_dynamic_metadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hdr_dynamic_metadata.h; sourceTree = "<group>"; };
+		168627842420821300CC9F79 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		168627852420821300CC9F79 /* hwcontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext.h; sourceTree = "<group>"; };
+		168627862420821300CC9F79 /* hwcontext_cuda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_cuda.h; sourceTree = "<group>"; };
+		168627872420821300CC9F79 /* hwcontext_d3d11va.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_d3d11va.h; sourceTree = "<group>"; };
+		168627882420821300CC9F79 /* hwcontext_drm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_drm.h; sourceTree = "<group>"; };
+		168627892420821300CC9F79 /* hwcontext_dxva2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_dxva2.h; sourceTree = "<group>"; };
+		1686278A2420821300CC9F79 /* hwcontext_mediacodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_mediacodec.h; sourceTree = "<group>"; };
+		1686278B2420821300CC9F79 /* hwcontext_qsv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_qsv.h; sourceTree = "<group>"; };
+		1686278C2420821300CC9F79 /* hwcontext_vaapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_vaapi.h; sourceTree = "<group>"; };
+		1686278D2420821300CC9F79 /* hwcontext_vdpau.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_vdpau.h; sourceTree = "<group>"; };
+		1686278E2420821300CC9F79 /* hwcontext_videotoolbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_videotoolbox.h; sourceTree = "<group>"; };
+		1686278F2420821300CC9F79 /* imgutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgutils.h; sourceTree = "<group>"; };
+		168627902420821300CC9F79 /* intfloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intfloat.h; sourceTree = "<group>"; };
+		168627912420821300CC9F79 /* intreadwrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intreadwrite.h; sourceTree = "<group>"; };
+		168627922420821300CC9F79 /* lfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lfg.h; sourceTree = "<group>"; };
+		168627932420821300CC9F79 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		168627942420821300CC9F79 /* lzo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzo.h; sourceTree = "<group>"; };
+		168627952420821300CC9F79 /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		168627962420821300CC9F79 /* mastering_display_metadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mastering_display_metadata.h; sourceTree = "<group>"; };
+		168627972420821300CC9F79 /* mathematics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathematics.h; sourceTree = "<group>"; };
+		168627982420821300CC9F79 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		168627992420821300CC9F79 /* mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mem.h; sourceTree = "<group>"; };
+		1686279A2420821300CC9F79 /* motion_vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = motion_vector.h; sourceTree = "<group>"; };
+		1686279B2420821300CC9F79 /* murmur3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = murmur3.h; sourceTree = "<group>"; };
+		1686279C2420821300CC9F79 /* opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opt.h; sourceTree = "<group>"; };
+		1686279D2420821300CC9F79 /* parseutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parseutils.h; sourceTree = "<group>"; };
+		1686279E2420821300CC9F79 /* pixdesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixdesc.h; sourceTree = "<group>"; };
+		1686279F2420821300CC9F79 /* pixelutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixelutils.h; sourceTree = "<group>"; };
+		168627A02420821300CC9F79 /* pixfmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixfmt.h; sourceTree = "<group>"; };
+		168627A12420821300CC9F79 /* random_seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random_seed.h; sourceTree = "<group>"; };
+		168627A22420821300CC9F79 /* rational.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rational.h; sourceTree = "<group>"; };
+		168627A32420821300CC9F79 /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		168627A42420821300CC9F79 /* replaygain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = replaygain.h; sourceTree = "<group>"; };
+		168627A52420821300CC9F79 /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		168627A62420821300CC9F79 /* samplefmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = samplefmt.h; sourceTree = "<group>"; };
+		168627A72420821300CC9F79 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		168627A82420821300CC9F79 /* sha512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha512.h; sourceTree = "<group>"; };
+		168627A92420821300CC9F79 /* spherical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spherical.h; sourceTree = "<group>"; };
+		168627AA2420821300CC9F79 /* stereo3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stereo3d.h; sourceTree = "<group>"; };
+		168627AB2420821300CC9F79 /* tea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tea.h; sourceTree = "<group>"; };
+		168627AC2420821300CC9F79 /* threadmessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threadmessage.h; sourceTree = "<group>"; };
+		168627AD2420821300CC9F79 /* time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time.h; sourceTree = "<group>"; };
+		168627AE2420821300CC9F79 /* timecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timecode.h; sourceTree = "<group>"; };
+		168627AF2420821300CC9F79 /* timestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timestamp.h; sourceTree = "<group>"; };
+		168627B02420821300CC9F79 /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
+		168627B12420821300CC9F79 /* twofish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twofish.h; sourceTree = "<group>"; };
+		168627B22420821300CC9F79 /* tx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tx.h; sourceTree = "<group>"; };
+		168627B32420821300CC9F79 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		168627B42420821300CC9F79 /* xtea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xtea.h; sourceTree = "<group>"; };
+		168627B62420821300CC9F79 /* swresample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swresample.h; sourceTree = "<group>"; };
+		168627B72420821300CC9F79 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		168627B92420821300CC9F79 /* swscale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swscale.h; sourceTree = "<group>"; };
+		168627BA2420821300CC9F79 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		168627C42420835A00CC9F79 /* SYPlayerDistortionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerDistortionModel.h; sourceTree = "<group>"; };
+		168627C52420835A00CC9F79 /* SYPlayerDistortionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerDistortionModel.m; sourceTree = "<group>"; };
+		168627C7242083DD00CC9F79 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		168627C9242085A800CC9F79 /* SYPlayerDistortionRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerDistortionRenderer.h; sourceTree = "<group>"; };
+		168627CA242085A800CC9F79 /* SYPlayerDistortionRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerDistortionRenderer.m; sourceTree = "<group>"; };
+		16B0CF892420A72000BAB62A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		16B0CF8B2420A8F700BAB62A /* SYPlayerFingerRotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerFingerRotation.h; sourceTree = "<group>"; };
+		16B0CF8C2420A8F700BAB62A /* SYPlayerFingerRotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerFingerRotation.m; sourceTree = "<group>"; };
+		16B0CF8E2420A97300BAB62A /* SYPlayerMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerMatrix.h; sourceTree = "<group>"; };
+		16B0CF8F2420A97300BAB62A /* SYPlayerMatrix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerMatrix.m; sourceTree = "<group>"; };
+		16B0CF912420ACE900BAB62A /* SYPlayerSenssor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerSenssor.h; sourceTree = "<group>"; };
+		16B0CF922420ACE900BAB62A /* SYPlayerSenssor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerSenssor.m; sourceTree = "<group>"; };
+		16B0CF962420B04900BAB62A /* SYPlayerFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerFrame.h; sourceTree = "<group>"; };
+		16B0CF972420B04900BAB62A /* SYPlayerFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerFrame.m; sourceTree = "<group>"; };
+		16B0CF9B2420B1CA00BAB62A /* SYPlayerAudioFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerAudioFrame.h; sourceTree = "<group>"; };
+		16B0CF9C2420B1CA00BAB62A /* SYPlayerAudioFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerAudioFrame.m; sourceTree = "<group>"; };
+		16B0CF9E2420B1E000BAB62A /* SYPlayerVideoFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerVideoFrame.h; sourceTree = "<group>"; };
+		16B0CF9F2420B1E000BAB62A /* SYPlayerVideoFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerVideoFrame.m; sourceTree = "<group>"; };
+		16B0CFA22420BA4900BAB62A /* SYPlayerYUVTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerYUVTool.h; sourceTree = "<group>"; };
+		16B0CFA32420BA4900BAB62A /* SYPlayerYUVTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerYUVTool.m; sourceTree = "<group>"; };
+		16B0CFA52420BDE500BAB62A /* SYPlayerAudioDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerAudioDecoder.h; sourceTree = "<group>"; };
+		16B0CFA62420BDE500BAB62A /* SYPlayerAudioDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerAudioDecoder.m; sourceTree = "<group>"; };
+		16B0CFA82420BF7B00BAB62A /* SYPlayerFrameQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerFrameQueue.h; sourceTree = "<group>"; };
+		16B0CFA92420BF7B00BAB62A /* SYPlayerFrameQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerFrameQueue.m; sourceTree = "<group>"; };
+		16B0CFAB2420BF9E00BAB62A /* SYPlayerFramePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerFramePool.h; sourceTree = "<group>"; };
+		16B0CFAC2420BF9E00BAB62A /* SYPlayerFramePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerFramePool.m; sourceTree = "<group>"; };
+		16B0CFAE2420C8AB00BAB62A /* SYPlayerVideoDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerVideoDecoder.h; sourceTree = "<group>"; };
+		16B0CFAF2420C8AB00BAB62A /* SYPlayerVideoDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerVideoDecoder.m; sourceTree = "<group>"; };
+		16B0CFB12420C9B600BAB62A /* SYPlayerVideoPacketQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerVideoPacketQueue.h; sourceTree = "<group>"; };
+		16B0CFB22420C9B600BAB62A /* SYPlayerVideoPacketQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerVideoPacketQueue.m; sourceTree = "<group>"; };
+		16B0CFB42420C9D300BAB62A /* SYPlayerVideoToolBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerVideoToolBox.h; sourceTree = "<group>"; };
+		16B0CFB52420C9D300BAB62A /* SYPlayerVideoToolBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerVideoToolBox.m; sourceTree = "<group>"; };
+		16B0CFB82420CF6200BAB62A /* SYPlayerFFTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerFFTools.h; sourceTree = "<group>"; };
+		16B0CFB92420CF6200BAB62A /* SYPlayerFFTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerFFTools.m; sourceTree = "<group>"; };
+		16B0CFBE2420D34800BAB62A /* SYPlayerRenderingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerRenderingView.h; sourceTree = "<group>"; };
+		16B0CFBF2420D34800BAB62A /* SYPlayerRenderingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerRenderingView.m; sourceTree = "<group>"; };
+		16B0CFC52420D3C100BAB62A /* SYPlayerGLModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerGLModel.h; sourceTree = "<group>"; };
+		16B0CFC62420D3C100BAB62A /* SYPlayerGLModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerGLModel.m; sourceTree = "<group>"; };
+		16B0CFC82420D48800BAB62A /* SYPlayerGLNormalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerGLNormalModel.h; sourceTree = "<group>"; };
+		16B0CFC92420D48800BAB62A /* SYPlayerGLNormalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerGLNormalModel.m; sourceTree = "<group>"; };
+		16B0CFCB2420D53800BAB62A /* SYPlayerGLVRModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerGLVRModel.h; sourceTree = "<group>"; };
+		16B0CFCC2420D53800BAB62A /* SYPlayerGLVRModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerGLVRModel.m; sourceTree = "<group>"; };
+		16B0CFCE2420D5A800BAB62A /* SYPlayerGLTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerGLTexture.h; sourceTree = "<group>"; };
+		16B0CFCF2420D5A800BAB62A /* SYPlayerGLTexture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerGLTexture.m; sourceTree = "<group>"; };
+		16B0CFD12420D5BE00BAB62A /* SYPlayerGLProgram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerGLProgram.h; sourceTree = "<group>"; };
+		16B0CFD22420D5BE00BAB62A /* SYPlayerGLProgram.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerGLProgram.m; sourceTree = "<group>"; };
+		16B0CFD42420D5DA00BAB62A /* SYPlayerGLFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerGLFrame.h; sourceTree = "<group>"; };
+		16B0CFD52420D5DA00BAB62A /* SYPlayerGLFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerGLFrame.m; sourceTree = "<group>"; };
+		16B0CFD72420D8CC00BAB62A /* SYPlayerGLProgramNV12.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerGLProgramNV12.h; sourceTree = "<group>"; };
+		16B0CFD82420D8CC00BAB62A /* SYPlayerGLProgramNV12.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerGLProgramNV12.m; sourceTree = "<group>"; };
+		16B0CFDA2420D92100BAB62A /* SYPlayerGLProgramYUV420.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerGLProgramYUV420.h; sourceTree = "<group>"; };
+		16B0CFDB2420D92100BAB62A /* SYPlayerGLProgramYUV420.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerGLProgramYUV420.m; sourceTree = "<group>"; };
+		16B0CFDD2420D97C00BAB62A /* SYPlayerGLTextureNV12.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerGLTextureNV12.h; sourceTree = "<group>"; };
+		16B0CFDE2420D97C00BAB62A /* SYPlayerGLTextureNV12.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerGLTextureNV12.m; sourceTree = "<group>"; };
+		16B0CFE02420DA2A00BAB62A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		16B0CFE22420DABF00BAB62A /* SYPlayerGLTextureYUV420.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerGLTextureYUV420.h; sourceTree = "<group>"; };
+		16B0CFE32420DABF00BAB62A /* SYPlayerGLTextureYUV420.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerGLTextureYUV420.m; sourceTree = "<group>"; };
+		16B0CFE52420DBA800BAB62A /* SYPlayerGLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerGLViewController.h; sourceTree = "<group>"; };
+		16B0CFE62420DBA800BAB62A /* SYPlayerGLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerGLViewController.m; sourceTree = "<group>"; };
+		16B0CFFF2421078700BAB62A /* SYEAGLContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYEAGLContext.h; sourceTree = "<group>"; };
+		16B0D0002421078700BAB62A /* SYEAGLContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYEAGLContext.m; sourceTree = "<group>"; };
+		16B0D0012421078700BAB62A /* SYGLKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGLKView.h; sourceTree = "<group>"; };
+		16B0D0022421078700BAB62A /* SYGLKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGLKView.m; sourceTree = "<group>"; };
+		16E2622D242348C0008C5CD6 /* SYPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerViewController.h; sourceTree = "<group>"; };
+		16E2622E242348C0008C5CD6 /* SYPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerViewController.m; sourceTree = "<group>"; };
+		16E2622F242348C0008C5CD6 /* SYPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SYPlayerViewController.xib; sourceTree = "<group>"; };
+		16FF060724224806000989E4 /* SYFFDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYFFDecoder.h; sourceTree = "<group>"; };
+		16FF060824224806000989E4 /* SYFFDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYFFDecoder.m; sourceTree = "<group>"; };
+		16FF060A2422483F000989E4 /* SYPlayerFFTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerFFTrack.h; sourceTree = "<group>"; };
+		16FF060B2422483F000989E4 /* SYPlayerFFTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerFFTrack.m; sourceTree = "<group>"; };
+		16FF060D242248D0000989E4 /* SYPlayerFFMetadata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerFFMetadata.h; sourceTree = "<group>"; };
+		16FF060E242248D0000989E4 /* SYPlayerFFMetadata.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerFFMetadata.m; sourceTree = "<group>"; };
+		16FF061024224D45000989E4 /* SYPlayerFFCodecContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYPlayerFFCodecContext.h; sourceTree = "<group>"; };
+		16FF061124224D45000989E4 /* SYPlayerFFCodecContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYPlayerFFCodecContext.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		166F2AD6241E358100BF81CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				168627BB2420821300CC9F79 /* libavcodec.a in Frameworks */,
+				168627BC2420821300CC9F79 /* libavdevice.a in Frameworks */,
+				168627BD2420821300CC9F79 /* libavfilter.a in Frameworks */,
+				168627BE2420821300CC9F79 /* libavformat.a in Frameworks */,
+				168627BF2420821300CC9F79 /* libavutil.a in Frameworks */,
+				168627C02420821300CC9F79 /* libswresample.a in Frameworks */,
+				168627C12420821300CC9F79 /* libswscale.a in Frameworks */,
+				16862739242080E700CC9F79 /* Accelerate.framework in Frameworks */,
+				1686272B24207FBD00CC9F79 /* AudioToolbox.framework in Frameworks */,
+				16862737242080DC00CC9F79 /* AVFoundation.framework in Frameworks */,
+				16B0CF8A2420A72000BAB62A /* CoreGraphics.framework in Frameworks */,
+				1686272724207FB000CC9F79 /* Foundation.framework in Frameworks */,
+				168627C8242083DD00CC9F79 /* GLKit.framework in Frameworks */,
+				16B0CFE12420DA2A00BAB62A /* OpenGLES.framework in Frameworks */,
+				1686272924207FB700CC9F79 /* UIKit.framework in Frameworks */,
+				1686272D24207FC300CC9F79 /* VideoToolbox.framework in Frameworks */,
+				1686272F24207FF000CC9F79 /* libbz2.1.0.tbd in Frameworks */,
+				168627332420800C00CC9F79 /* libc++.1.tbd in Frameworks */,
+				168627352420801700CC9F79 /* libiconv.2.4.0.tbd in Frameworks */,
+				168627312420800100CC9F79 /* libz.1.2.8.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1657D67224210C390038FC1C /* CorePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1657D67324210CAB0038FC1C /* SYAVPlayer.h */,
+				1657D67424210CAB0038FC1C /* SYAVPlayer.m */,
+				1657D67624210CBD0038FC1C /* SYFFMpegPlayer.h */,
+				1657D67724210CBD0038FC1C /* SYFFMpegPlayer.m */,
+				1657D67924210F940038FC1C /* SYPlayerTrack.h */,
+				1657D67A24210F940038FC1C /* SYPlayerTrack.m */,
+			);
+			path = CorePlayer;
+			sourceTree = "<group>";
+		};
+		166F2AD0241E358100BF81CC = {
+			isa = PBXGroup;
+			children = (
+				166F2AF5241E3B0600BF81CC /* SYMediaPlayer */,
+				166F2ADB241E358100BF81CC /* SYMediaPlayerDemo */,
+				166F2ADA241E358100BF81CC /* Products */,
+				1686272524207FB000CC9F79 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		166F2ADA241E358100BF81CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				166F2AD9241E358100BF81CC /* SYMediaPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		166F2ADB241E358100BF81CC /* SYMediaPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				166F2ADC241E358100BF81CC /* AppDelegate.h */,
+				166F2ADD241E358100BF81CC /* AppDelegate.m */,
+				166F2AE2241E358100BF81CC /* ViewController.h */,
+				166F2AE3241E358100BF81CC /* ViewController.m */,
+				16E2622D242348C0008C5CD6 /* SYPlayerViewController.h */,
+				16E2622E242348C0008C5CD6 /* SYPlayerViewController.m */,
+				16E2622F242348C0008C5CD6 /* SYPlayerViewController.xib */,
+				166F2AE8241E358200BF81CC /* Assets.xcassets */,
+				166F2AED241E358200BF81CC /* Info.plist */,
+				166F2AEE241E358200BF81CC /* main.m */,
+				16E2622C24234876008C5CD6 /* Storyboards */,
+			);
+			path = SYMediaPlayerDemo;
+			sourceTree = "<group>";
+		};
+		166F2AF5241E3B0600BF81CC /* SYMediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				166F2AF9241E3B7100BF81CC /* ParamsDefine.h */,
+				166F2AF6241E3B4500BF81CC /* SYMediaPlayer.h */,
+				166F2AF7241E3B4500BF81CC /* SYMediaPlayer.m */,
+				1657D67C242114020038FC1C /* SYPlayerDecoder.h */,
+				1657D67D242114020038FC1C /* SYPlayerDecoder.m */,
+				1657D67224210C390038FC1C /* CorePlayer */,
+				16B0CFBD2420D2C900BAB62A /* AudioManager */,
+				16B0CFBC2420D29E00BAB62A /* VideoRendering */,
+				1686271F24207F1900CC9F79 /* Decode */,
+				168627C22420832400CC9F79 /* Distortion */,
+				168627C32420832D00CC9F79 /* Matrix */,
+				1686271E24207F1100CC9F79 /* FFMpeg */,
+			);
+			path = SYMediaPlayer;
+			sourceTree = "<group>";
+		};
+		1686271E24207F1100CC9F79 /* FFMpeg */ = {
+			isa = PBXGroup;
+			children = (
+				168627422420821300CC9F79 /* include */,
+				1686273A2420821300CC9F79 /* lib */,
+			);
+			path = FFMpeg;
+			sourceTree = "<group>";
+		};
+		1686271F24207F1900CC9F79 /* Decode */ = {
+			isa = PBXGroup;
+			children = (
+				16FF060724224806000989E4 /* SYFFDecoder.h */,
+				16FF060824224806000989E4 /* SYFFDecoder.m */,
+				16B0CF962420B04900BAB62A /* SYPlayerFrame.h */,
+				16B0CF972420B04900BAB62A /* SYPlayerFrame.m */,
+				16B0CFAB2420BF9E00BAB62A /* SYPlayerFramePool.h */,
+				16B0CFAC2420BF9E00BAB62A /* SYPlayerFramePool.m */,
+				16B0CFA82420BF7B00BAB62A /* SYPlayerFrameQueue.h */,
+				16B0CFA92420BF7B00BAB62A /* SYPlayerFrameQueue.m */,
+				16B0CF992420B18F00BAB62A /* Audio */,
+				16B0CF9A2420B19500BAB62A /* Video */,
+				16B0CFBB2420CFE700BAB62A /* Tool */,
+			);
+			path = Decode;
+			sourceTree = "<group>";
+		};
+		1686272524207FB000CC9F79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16B0CFE02420DA2A00BAB62A /* OpenGLES.framework */,
+				16862738242080E700CC9F79 /* Accelerate.framework */,
+				1686272A24207FBD00CC9F79 /* AudioToolbox.framework */,
+				16862736242080DC00CC9F79 /* AVFoundation.framework */,
+				16B0CF892420A72000BAB62A /* CoreGraphics.framework */,
+				1686272624207FB000CC9F79 /* Foundation.framework */,
+				168627C7242083DD00CC9F79 /* GLKit.framework */,
+				1686272824207FB700CC9F79 /* UIKit.framework */,
+				1686272C24207FC300CC9F79 /* VideoToolbox.framework */,
+				168627302420800100CC9F79 /* libz.1.2.8.tbd */,
+				168627322420800C00CC9F79 /* libc++.1.tbd */,
+				168627342420801700CC9F79 /* libiconv.2.4.0.tbd */,
+				1686272E24207FF000CC9F79 /* libbz2.1.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1686273A2420821300CC9F79 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1686273B2420821300CC9F79 /* libavcodec.a */,
+				1686273C2420821300CC9F79 /* libavdevice.a */,
+				1686273D2420821300CC9F79 /* libavfilter.a */,
+				1686273E2420821300CC9F79 /* libavformat.a */,
+				1686273F2420821300CC9F79 /* libavutil.a */,
+				168627402420821300CC9F79 /* libswresample.a */,
+				168627412420821300CC9F79 /* libswscale.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		168627422420821300CC9F79 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				168627432420821300CC9F79 /* libavcodec */,
+				168627562420821300CC9F79 /* libavdevice */,
+				168627592420821300CC9F79 /* libavfilter */,
+				1686275E2420821300CC9F79 /* libavformat */,
+				168627622420821300CC9F79 /* libavutil */,
+				168627B52420821300CC9F79 /* libswresample */,
+				168627B82420821300CC9F79 /* libswscale */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		168627432420821300CC9F79 /* libavcodec */ = {
+			isa = PBXGroup;
+			children = (
+				168627442420821300CC9F79 /* ac3_parser.h */,
+				168627452420821300CC9F79 /* adts_parser.h */,
+				168627462420821300CC9F79 /* avcodec.h */,
+				168627472420821300CC9F79 /* avdct.h */,
+				168627482420821300CC9F79 /* avfft.h */,
+				168627492420821300CC9F79 /* d3d11va.h */,
+				1686274A2420821300CC9F79 /* dirac.h */,
+				1686274B2420821300CC9F79 /* dv_profile.h */,
+				1686274C2420821300CC9F79 /* dxva2.h */,
+				1686274D2420821300CC9F79 /* jni.h */,
+				1686274E2420821300CC9F79 /* mediacodec.h */,
+				1686274F2420821300CC9F79 /* qsv.h */,
+				168627502420821300CC9F79 /* vaapi.h */,
+				168627512420821300CC9F79 /* vdpau.h */,
+				168627522420821300CC9F79 /* version.h */,
+				168627532420821300CC9F79 /* videotoolbox.h */,
+				168627542420821300CC9F79 /* vorbis_parser.h */,
+				168627552420821300CC9F79 /* xvmc.h */,
+			);
+			path = libavcodec;
+			sourceTree = "<group>";
+		};
+		168627562420821300CC9F79 /* libavdevice */ = {
+			isa = PBXGroup;
+			children = (
+				168627572420821300CC9F79 /* avdevice.h */,
+				168627582420821300CC9F79 /* version.h */,
+			);
+			path = libavdevice;
+			sourceTree = "<group>";
+		};
+		168627592420821300CC9F79 /* libavfilter */ = {
+			isa = PBXGroup;
+			children = (
+				1686275A2420821300CC9F79 /* avfilter.h */,
+				1686275B2420821300CC9F79 /* buffersink.h */,
+				1686275C2420821300CC9F79 /* buffersrc.h */,
+				1686275D2420821300CC9F79 /* version.h */,
+			);
+			path = libavfilter;
+			sourceTree = "<group>";
+		};
+		1686275E2420821300CC9F79 /* libavformat */ = {
+			isa = PBXGroup;
+			children = (
+				1686275F2420821300CC9F79 /* avformat.h */,
+				168627602420821300CC9F79 /* avio.h */,
+				168627612420821300CC9F79 /* version.h */,
+			);
+			path = libavformat;
+			sourceTree = "<group>";
+		};
+		168627622420821300CC9F79 /* libavutil */ = {
+			isa = PBXGroup;
+			children = (
+				168627632420821300CC9F79 /* adler32.h */,
+				168627642420821300CC9F79 /* aes.h */,
+				168627652420821300CC9F79 /* aes_ctr.h */,
+				168627662420821300CC9F79 /* attributes.h */,
+				168627672420821300CC9F79 /* audio_fifo.h */,
+				168627682420821300CC9F79 /* avassert.h */,
+				168627692420821300CC9F79 /* avconfig.h */,
+				1686276A2420821300CC9F79 /* avstring.h */,
+				1686276B2420821300CC9F79 /* avutil.h */,
+				1686276C2420821300CC9F79 /* base64.h */,
+				1686276D2420821300CC9F79 /* blowfish.h */,
+				1686276E2420821300CC9F79 /* bprint.h */,
+				1686276F2420821300CC9F79 /* bswap.h */,
+				168627702420821300CC9F79 /* buffer.h */,
+				168627712420821300CC9F79 /* camellia.h */,
+				168627722420821300CC9F79 /* cast5.h */,
+				168627732420821300CC9F79 /* channel_layout.h */,
+				168627742420821300CC9F79 /* common.h */,
+				168627752420821300CC9F79 /* cpu.h */,
+				168627762420821300CC9F79 /* crc.h */,
+				168627772420821300CC9F79 /* des.h */,
+				168627782420821300CC9F79 /* dict.h */,
+				168627792420821300CC9F79 /* display.h */,
+				1686277A2420821300CC9F79 /* downmix_info.h */,
+				1686277B2420821300CC9F79 /* encryption_info.h */,
+				1686277C2420821300CC9F79 /* error.h */,
+				1686277D2420821300CC9F79 /* eval.h */,
+				1686277E2420821300CC9F79 /* ffversion.h */,
+				1686277F2420821300CC9F79 /* fifo.h */,
+				168627802420821300CC9F79 /* file.h */,
+				168627812420821300CC9F79 /* frame.h */,
+				168627822420821300CC9F79 /* hash.h */,
+				168627832420821300CC9F79 /* hdr_dynamic_metadata.h */,
+				168627842420821300CC9F79 /* hmac.h */,
+				168627852420821300CC9F79 /* hwcontext.h */,
+				168627862420821300CC9F79 /* hwcontext_cuda.h */,
+				168627872420821300CC9F79 /* hwcontext_d3d11va.h */,
+				168627882420821300CC9F79 /* hwcontext_drm.h */,
+				168627892420821300CC9F79 /* hwcontext_dxva2.h */,
+				1686278A2420821300CC9F79 /* hwcontext_mediacodec.h */,
+				1686278B2420821300CC9F79 /* hwcontext_qsv.h */,
+				1686278C2420821300CC9F79 /* hwcontext_vaapi.h */,
+				1686278D2420821300CC9F79 /* hwcontext_vdpau.h */,
+				1686278E2420821300CC9F79 /* hwcontext_videotoolbox.h */,
+				1686278F2420821300CC9F79 /* imgutils.h */,
+				168627902420821300CC9F79 /* intfloat.h */,
+				168627912420821300CC9F79 /* intreadwrite.h */,
+				168627922420821300CC9F79 /* lfg.h */,
+				168627932420821300CC9F79 /* log.h */,
+				168627942420821300CC9F79 /* lzo.h */,
+				168627952420821300CC9F79 /* macros.h */,
+				168627962420821300CC9F79 /* mastering_display_metadata.h */,
+				168627972420821300CC9F79 /* mathematics.h */,
+				168627982420821300CC9F79 /* md5.h */,
+				168627992420821300CC9F79 /* mem.h */,
+				1686279A2420821300CC9F79 /* motion_vector.h */,
+				1686279B2420821300CC9F79 /* murmur3.h */,
+				1686279C2420821300CC9F79 /* opt.h */,
+				1686279D2420821300CC9F79 /* parseutils.h */,
+				1686279E2420821300CC9F79 /* pixdesc.h */,
+				1686279F2420821300CC9F79 /* pixelutils.h */,
+				168627A02420821300CC9F79 /* pixfmt.h */,
+				168627A12420821300CC9F79 /* random_seed.h */,
+				168627A22420821300CC9F79 /* rational.h */,
+				168627A32420821300CC9F79 /* rc4.h */,
+				168627A42420821300CC9F79 /* replaygain.h */,
+				168627A52420821300CC9F79 /* ripemd.h */,
+				168627A62420821300CC9F79 /* samplefmt.h */,
+				168627A72420821300CC9F79 /* sha.h */,
+				168627A82420821300CC9F79 /* sha512.h */,
+				168627A92420821300CC9F79 /* spherical.h */,
+				168627AA2420821300CC9F79 /* stereo3d.h */,
+				168627AB2420821300CC9F79 /* tea.h */,
+				168627AC2420821300CC9F79 /* threadmessage.h */,
+				168627AD2420821300CC9F79 /* time.h */,
+				168627AE2420821300CC9F79 /* timecode.h */,
+				168627AF2420821300CC9F79 /* timestamp.h */,
+				168627B02420821300CC9F79 /* tree.h */,
+				168627B12420821300CC9F79 /* twofish.h */,
+				168627B22420821300CC9F79 /* tx.h */,
+				168627B32420821300CC9F79 /* version.h */,
+				168627B42420821300CC9F79 /* xtea.h */,
+			);
+			path = libavutil;
+			sourceTree = "<group>";
+		};
+		168627B52420821300CC9F79 /* libswresample */ = {
+			isa = PBXGroup;
+			children = (
+				168627B62420821300CC9F79 /* swresample.h */,
+				168627B72420821300CC9F79 /* version.h */,
+			);
+			path = libswresample;
+			sourceTree = "<group>";
+		};
+		168627B82420821300CC9F79 /* libswscale */ = {
+			isa = PBXGroup;
+			children = (
+				168627B92420821300CC9F79 /* swscale.h */,
+				168627BA2420821300CC9F79 /* version.h */,
+			);
+			path = libswscale;
+			sourceTree = "<group>";
+		};
+		168627C22420832400CC9F79 /* Distortion */ = {
+			isa = PBXGroup;
+			children = (
+				168627C42420835A00CC9F79 /* SYPlayerDistortionModel.h */,
+				168627C52420835A00CC9F79 /* SYPlayerDistortionModel.m */,
+				168627C9242085A800CC9F79 /* SYPlayerDistortionRenderer.h */,
+				168627CA242085A800CC9F79 /* SYPlayerDistortionRenderer.m */,
+			);
+			path = Distortion;
+			sourceTree = "<group>";
+		};
+		168627C32420832D00CC9F79 /* Matrix */ = {
+			isa = PBXGroup;
+			children = (
+				16B0CF8B2420A8F700BAB62A /* SYPlayerFingerRotation.h */,
+				16B0CF8C2420A8F700BAB62A /* SYPlayerFingerRotation.m */,
+				16B0CF8E2420A97300BAB62A /* SYPlayerMatrix.h */,
+				16B0CF8F2420A97300BAB62A /* SYPlayerMatrix.m */,
+				16B0CF912420ACE900BAB62A /* SYPlayerSenssor.h */,
+				16B0CF922420ACE900BAB62A /* SYPlayerSenssor.m */,
+			);
+			path = Matrix;
+			sourceTree = "<group>";
+		};
+		16B0CF992420B18F00BAB62A /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				16B0CF9B2420B1CA00BAB62A /* SYPlayerAudioFrame.h */,
+				16B0CF9C2420B1CA00BAB62A /* SYPlayerAudioFrame.m */,
+				16B0CFA52420BDE500BAB62A /* SYPlayerAudioDecoder.h */,
+				16B0CFA62420BDE500BAB62A /* SYPlayerAudioDecoder.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		16B0CF9A2420B19500BAB62A /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				16B0CFA22420BA4900BAB62A /* SYPlayerYUVTool.h */,
+				16B0CFA32420BA4900BAB62A /* SYPlayerYUVTool.m */,
+				16B0CF9E2420B1E000BAB62A /* SYPlayerVideoFrame.h */,
+				16B0CF9F2420B1E000BAB62A /* SYPlayerVideoFrame.m */,
+				16B0CFB42420C9D300BAB62A /* SYPlayerVideoToolBox.h */,
+				16B0CFB52420C9D300BAB62A /* SYPlayerVideoToolBox.m */,
+				16B0CFB12420C9B600BAB62A /* SYPlayerVideoPacketQueue.h */,
+				16B0CFB22420C9B600BAB62A /* SYPlayerVideoPacketQueue.m */,
+				16B0CFAE2420C8AB00BAB62A /* SYPlayerVideoDecoder.h */,
+				16B0CFAF2420C8AB00BAB62A /* SYPlayerVideoDecoder.m */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		16B0CFBB2420CFE700BAB62A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				16B0CFB82420CF6200BAB62A /* SYPlayerFFTools.h */,
+				16B0CFB92420CF6200BAB62A /* SYPlayerFFTools.m */,
+				16FF060A2422483F000989E4 /* SYPlayerFFTrack.h */,
+				16FF060B2422483F000989E4 /* SYPlayerFFTrack.m */,
+				16FF060D242248D0000989E4 /* SYPlayerFFMetadata.h */,
+				16FF060E242248D0000989E4 /* SYPlayerFFMetadata.m */,
+				16FF061024224D45000989E4 /* SYPlayerFFCodecContext.h */,
+				16FF061124224D45000989E4 /* SYPlayerFFCodecContext.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		16B0CFBC2420D29E00BAB62A /* VideoRendering */ = {
+			isa = PBXGroup;
+			children = (
+				16B0CFBE2420D34800BAB62A /* SYPlayerRenderingView.h */,
+				16B0CFBF2420D34800BAB62A /* SYPlayerRenderingView.m */,
+				16B0CFC12420D35A00BAB62A /* GLModel */,
+				16B0CFC32420D37900BAB62A /* GLProgram */,
+				16B0CFC22420D36500BAB62A /* GLTexture */,
+				16B0CFC42420D38000BAB62A /* GLView */,
+				16B0CFFE2421078700BAB62A /* OpenGLES */,
+			);
+			path = VideoRendering;
+			sourceTree = "<group>";
+		};
+		16B0CFBD2420D2C900BAB62A /* AudioManager */ = {
+			isa = PBXGroup;
+			children = (
+				1686272224207F9900CC9F79 /* SYPlayerAudioManager.h */,
+				1686272324207F9900CC9F79 /* SYPlayerAudioManager.m */,
+			);
+			path = AudioManager;
+			sourceTree = "<group>";
+		};
+		16B0CFC12420D35A00BAB62A /* GLModel */ = {
+			isa = PBXGroup;
+			children = (
+				16B0CFC52420D3C100BAB62A /* SYPlayerGLModel.h */,
+				16B0CFC62420D3C100BAB62A /* SYPlayerGLModel.m */,
+				16B0CFCB2420D53800BAB62A /* SYPlayerGLVRModel.h */,
+				16B0CFCC2420D53800BAB62A /* SYPlayerGLVRModel.m */,
+				16B0CFC82420D48800BAB62A /* SYPlayerGLNormalModel.h */,
+				16B0CFC92420D48800BAB62A /* SYPlayerGLNormalModel.m */,
+			);
+			path = GLModel;
+			sourceTree = "<group>";
+		};
+		16B0CFC22420D36500BAB62A /* GLTexture */ = {
+			isa = PBXGroup;
+			children = (
+				16B0CFCE2420D5A800BAB62A /* SYPlayerGLTexture.h */,
+				16B0CFCF2420D5A800BAB62A /* SYPlayerGLTexture.m */,
+				16B0CFDD2420D97C00BAB62A /* SYPlayerGLTextureNV12.h */,
+				16B0CFDE2420D97C00BAB62A /* SYPlayerGLTextureNV12.m */,
+				16B0CFE22420DABF00BAB62A /* SYPlayerGLTextureYUV420.h */,
+				16B0CFE32420DABF00BAB62A /* SYPlayerGLTextureYUV420.m */,
+			);
+			path = GLTexture;
+			sourceTree = "<group>";
+		};
+		16B0CFC32420D37900BAB62A /* GLProgram */ = {
+			isa = PBXGroup;
+			children = (
+				16B0CFD12420D5BE00BAB62A /* SYPlayerGLProgram.h */,
+				16B0CFD22420D5BE00BAB62A /* SYPlayerGLProgram.m */,
+				16B0CFD72420D8CC00BAB62A /* SYPlayerGLProgramNV12.h */,
+				16B0CFD82420D8CC00BAB62A /* SYPlayerGLProgramNV12.m */,
+				16B0CFDA2420D92100BAB62A /* SYPlayerGLProgramYUV420.h */,
+				16B0CFDB2420D92100BAB62A /* SYPlayerGLProgramYUV420.m */,
+			);
+			path = GLProgram;
+			sourceTree = "<group>";
+		};
+		16B0CFC42420D38000BAB62A /* GLView */ = {
+			isa = PBXGroup;
+			children = (
+				16B0CFD42420D5DA00BAB62A /* SYPlayerGLFrame.h */,
+				16B0CFD52420D5DA00BAB62A /* SYPlayerGLFrame.m */,
+				16B0CFE52420DBA800BAB62A /* SYPlayerGLViewController.h */,
+				16B0CFE62420DBA800BAB62A /* SYPlayerGLViewController.m */,
+			);
+			path = GLView;
+			sourceTree = "<group>";
+		};
+		16B0CFFE2421078700BAB62A /* OpenGLES */ = {
+			isa = PBXGroup;
+			children = (
+				16B0D0012421078700BAB62A /* SYGLKView.h */,
+				16B0D0022421078700BAB62A /* SYGLKView.m */,
+				16B0CFFF2421078700BAB62A /* SYEAGLContext.h */,
+				16B0D0002421078700BAB62A /* SYEAGLContext.m */,
+				1657D66E242108280038FC1C /* SYGLKViewController.h */,
+				1657D66D242108280038FC1C /* SYGLKViewController.m */,
+			);
+			path = OpenGLES;
+			sourceTree = "<group>";
+		};
+		16E2622C24234876008C5CD6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				166F2AEA241E358200BF81CC /* LaunchScreen.storyboard */,
+				166F2AE5241E358100BF81CC /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		166F2AD8241E358100BF81CC /* SYMediaPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 166F2AF2241E358200BF81CC /* Build configuration list for PBXNativeTarget "SYMediaPlayerDemo" */;
+			buildPhases = (
+				166F2AD5241E358100BF81CC /* Sources */,
+				166F2AD6241E358100BF81CC /* Frameworks */,
+				166F2AD7241E358100BF81CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYMediaPlayerDemo;
+			productName = SYMediaPlayerDemo;
+			productReference = 166F2AD9241E358100BF81CC /* SYMediaPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		166F2AD1241E358100BF81CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = RYB;
+				TargetAttributes = {
+					166F2AD8241E358100BF81CC = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 166F2AD4241E358100BF81CC /* Build configuration list for PBXProject "SYMediaPlayerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 166F2AD0241E358100BF81CC;
+			productRefGroup = 166F2ADA241E358100BF81CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				166F2AD8241E358100BF81CC /* SYMediaPlayerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		166F2AD7241E358100BF81CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166F2AEC241E358200BF81CC /* LaunchScreen.storyboard in Resources */,
+				166F2AE9241E358200BF81CC /* Assets.xcassets in Resources */,
+				166F2AE7241E358100BF81CC /* Main.storyboard in Resources */,
+				16E26231242348C0008C5CD6 /* SYPlayerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		166F2AD5241E358100BF81CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1657D67524210CAB0038FC1C /* SYAVPlayer.m in Sources */,
+				16B0CFAD2420BF9E00BAB62A /* SYPlayerFramePool.m in Sources */,
+				16B0CFB02420C8AB00BAB62A /* SYPlayerVideoDecoder.m in Sources */,
+				16B0D0052421078700BAB62A /* SYEAGLContext.m in Sources */,
+				16B0CFBA2420CF6200BAB62A /* SYPlayerFFTools.m in Sources */,
+				16B0D0062421078700BAB62A /* SYGLKView.m in Sources */,
+				16B0CF982420B04900BAB62A /* SYPlayerFrame.m in Sources */,
+				16B0CFDC2420D92100BAB62A /* SYPlayerGLProgramYUV420.m in Sources */,
+				1657D67B24210F940038FC1C /* SYPlayerTrack.m in Sources */,
+				16B0CF9D2420B1CA00BAB62A /* SYPlayerAudioFrame.m in Sources */,
+				16B0CFB62420C9D300BAB62A /* SYPlayerVideoToolBox.m in Sources */,
+				1686272424207F9900CC9F79 /* SYPlayerAudioManager.m in Sources */,
+				166F2AE4241E358100BF81CC /* ViewController.m in Sources */,
+				16B0CFCA2420D48800BAB62A /* SYPlayerGLNormalModel.m in Sources */,
+				16B0CFD02420D5A800BAB62A /* SYPlayerGLTexture.m in Sources */,
+				16FF060C2422483F000989E4 /* SYPlayerFFTrack.m in Sources */,
+				16B0CFE72420DBA800BAB62A /* SYPlayerGLViewController.m in Sources */,
+				16B0CFE42420DABF00BAB62A /* SYPlayerGLTextureYUV420.m in Sources */,
+				16B0CFD32420D5BE00BAB62A /* SYPlayerGLProgram.m in Sources */,
+				16B0CF902420A97300BAB62A /* SYPlayerMatrix.m in Sources */,
+				16FF060F242248D0000989E4 /* SYPlayerFFMetadata.m in Sources */,
+				1657D66F242108280038FC1C /* SYGLKViewController.m in Sources */,
+				166F2ADE241E358100BF81CC /* AppDelegate.m in Sources */,
+				16B0CFB32420C9B600BAB62A /* SYPlayerVideoPacketQueue.m in Sources */,
+				16B0CF932420ACE900BAB62A /* SYPlayerSenssor.m in Sources */,
+				166F2AEF241E358200BF81CC /* main.m in Sources */,
+				16B0CFCD2420D53800BAB62A /* SYPlayerGLVRModel.m in Sources */,
+				16B0CFAA2420BF7B00BAB62A /* SYPlayerFrameQueue.m in Sources */,
+				166F2AF8241E3B4500BF81CC /* SYMediaPlayer.m in Sources */,
+				16FF060924224806000989E4 /* SYFFDecoder.m in Sources */,
+				16B0CFA02420B1E000BAB62A /* SYPlayerVideoFrame.m in Sources */,
+				16B0CFC72420D3C100BAB62A /* SYPlayerGLModel.m in Sources */,
+				16E26230242348C0008C5CD6 /* SYPlayerViewController.m in Sources */,
+				168627C62420835A00CC9F79 /* SYPlayerDistortionModel.m in Sources */,
+				16B0CFDF2420D97C00BAB62A /* SYPlayerGLTextureNV12.m in Sources */,
+				16B0CFD92420D8CC00BAB62A /* SYPlayerGLProgramNV12.m in Sources */,
+				1657D67824210CBD0038FC1C /* SYFFMpegPlayer.m in Sources */,
+				168627CB242085A800CC9F79 /* SYPlayerDistortionRenderer.m in Sources */,
+				16B0CFD62420D5DA00BAB62A /* SYPlayerGLFrame.m in Sources */,
+				1657D67E242114020038FC1C /* SYPlayerDecoder.m in Sources */,
+				16B0CFC02420D34800BAB62A /* SYPlayerRenderingView.m in Sources */,
+				16B0CF8D2420A8F700BAB62A /* SYPlayerFingerRotation.m in Sources */,
+				16FF061224224D45000989E4 /* SYPlayerFFCodecContext.m in Sources */,
+				16B0CFA42420BA4900BAB62A /* SYPlayerYUVTool.m in Sources */,
+				16B0CFA72420BDE500BAB62A /* SYPlayerAudioDecoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		166F2AE5241E358100BF81CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				166F2AE6241E358100BF81CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		166F2AEA241E358200BF81CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				166F2AEB241E358200BF81CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		166F2AF0241E358200BF81CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		166F2AF1241E358200BF81CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		166F2AF3241E358200BF81CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SYMediaPlayer/FFMpeg/include",
+				);
+				INFOPLIST_FILE = SYMediaPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SYMediaPlayer/FFMpeg/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.SYMediaPlayer;
+				PRODUCT_NAME = SYMediaPlayer;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		166F2AF4241E358200BF81CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SYMediaPlayer/FFMpeg/include",
+				);
+				INFOPLIST_FILE = SYMediaPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SYMediaPlayer/FFMpeg/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.SYMediaPlayer;
+				PRODUCT_NAME = SYMediaPlayer;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		166F2AD4241E358100BF81CC /* Build configuration list for PBXProject "SYMediaPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166F2AF0241E358200BF81CC /* Debug */,
+				166F2AF1241E358200BF81CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		166F2AF2241E358200BF81CC /* Build configuration list for PBXNativeTarget "SYMediaPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166F2AF3241E358200BF81CC /* Debug */,
+				166F2AF4241E358200BF81CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 166F2AD1241E358100BF81CC /* Project object */;
+}
