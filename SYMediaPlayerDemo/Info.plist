@@ -20,6 +20,8 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app allows access photo library.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
